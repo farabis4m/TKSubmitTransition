@@ -22,7 +22,7 @@ open class TKTransitionSubmitButton : UIButton, UIViewControllerTransitioningDel
     let shrinkCurve = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
     let expandCurve = CAMediaTimingFunction(controlPoints: 0.95, 0.02, 1, 0.05)
     let shrinkDuration: CFTimeInterval  = 0.1
-    @IBInspectable open var normalCornerRadius:CGFloat? = 0.0{
+    open var normalCornerRadius:CGFloat? = 0.0{
         didSet {
             self.layer.cornerRadius = normalCornerRadius!
         }
